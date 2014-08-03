@@ -14,10 +14,9 @@ board.on("ready",function(){
   });
 //	(new five.Led(13)).strobe(500); //hola mundo 
 
-/*
-	Play specifics songs
-*/
 extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
+//	Play specifics songs
+// test 
 	if(err) console.log(err,"error ");
 	console.log(tunes);
 });

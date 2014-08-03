@@ -1,0 +1,12 @@
+{
+	"autor":"esneyder amin palacios mena",
+	"name":"Aporte-j5Songs",
+	"version":"0.0.0",
+	"descripcion":"Este repositorio contiene un pequeño aporte para el modulo de node.js j5-songs, el aporte
+		consiste en una funcion 'play_list' que sirve para reproducir las canciones de 'j5-songs'en una lista 
+        de reproduccion con canciones especificas o de todas las canciones disponibles.",
+	"dependencies":{
+		"johnny-five":"*",
+		"j5-songs":"0.0.4"
+	}
+}
