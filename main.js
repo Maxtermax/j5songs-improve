@@ -12,7 +12,6 @@ board.on("ready",function(){
   board.repl.inject({
     piezo: piezo
   });
-//	(new five.Led(13)).strobe(500); //hola mundo 
 
 extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
 //	Play specifics songs
