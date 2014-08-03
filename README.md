@@ -66,9 +66,9 @@ extras.play_list([],piezo,function(err,tunes){
 	if(err) console.log(err);
 	console.log(tunes);
 });
+```
 
-
-En de opcion libre la decision de  incluir o modificar esta funcion para añadir al modulo 'j5-songs'.
+En de opcion libre la decision de  incluir o modificar esta funcion para añadir al modulo 'j5-songs'
 
 #CONTACTO
 ##	1- esneyder_a@hotmail.com 
