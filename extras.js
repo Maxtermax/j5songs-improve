@@ -87,7 +87,4 @@ module.exports={
 		};//return error width the song not founds :(
 	}//end fn play 
 
-
-
-
 }//end functions extras 
