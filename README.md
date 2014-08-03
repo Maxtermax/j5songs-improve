@@ -70,8 +70,8 @@ extras.play_list([],piezo,function(err,tunes){
 
 En de opcion libre la decision de  incluir o modificar esta funcion para añadir al modulo 'j5-songs'.
 
-=======
-CONTACTO
-==============
-esneyderamin@gmail.com
-@sneyder_a
+#CONTACTO
+##	1- esneyder_a@hotmail.com 
+##  2- esneyderamin@gmail.com 
+##  3- https://twitter.com/Sneyder_A 
+##From @Quibdojs  		 								 https://twitter.com/QuibdoJs
