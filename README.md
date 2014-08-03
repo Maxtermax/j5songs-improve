@@ -5,7 +5,7 @@ APORTES A J5-SONGS
 
 Este repositorio contiene un pequeño aporte para el modulo de node.js j5-songs, el aporte
 consiste en una funcion 'play_list' que sirve para reproducir las canciones de 'j5-songs'en una lista 
-de reproduccion de canciones especificas o de todas las canciones disponibles.
+de reproduccion con canciones especificas o de todas las canciones disponibles.
 
 La funcion 'play'_list' tiene la siguiente sintaxis
 
@@ -52,13 +52,16 @@ extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
 });
 ```
 En caso de que se quiera reproducir todas las caciones disponible entonces se define exactamente de 
-la misma manera anteriormente vista pero con un pequeño cambio que el Array se deja vacio. 
+la misma manera anteriormente vista pero con un pequeño cambio que el Array se deja vacio, la unica 
+desventaja potencial de esta funcion es que el tiempo de espera para reproducir la siguiente cancion 
+puede ser mas grande entre mas canciones se definan, seria de gran ayuda si se revisa el codigo fuente extra.js
+para encontrar una solucion. 
 
 
 
 ```javascript
 
-extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
+extras.play_list([],piezo,function(err,tunes){
 //	Play all songs
 	if(err) console.log(err);
 	console.log(tunes);
