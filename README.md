@@ -52,10 +52,7 @@ extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
 });
 ```
 En caso de que se quiera reproducir todas las caciones disponible entonces se define exactamente de 
-la misma manera anteriormente vista pero con un pequeño cambio que el Array se deja vacio, la unica 
-desventaja potencial de esta funcion es que el tiempo de espera para reproducir la siguiente cancion 
-puede ser mas grande entre mas canciones se definan, seria de gran ayuda si se revisa el codigo fuente extra.js
-para encontrar una solucion. 
+la misma manera anteriormente vista pero con un pequeño cambio que el Array se deja vacio. 
 
 
 

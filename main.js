@@ -6,19 +6,22 @@ var board = new five.Board({
 	port:'COM10'
 });
 
+var t;
 
 board.on("ready",function(){
  var piezo = new five.Piezo(3);
   board.repl.inject({
     piezo: piezo
   });
-
-extras.play_list(["mario-intro","mario-fanfare"],piezo,function(err,tunes){
+//"mario-intro","mario-fanfare"
+extras.play_list([],piezo,function(err,tunes){
 //	Play specifics songs
 // test 
-	if(err) console.log(err,"error ");
-	console.log(tunes);
+ console.log(tunes);
+
+
 });
+
 
 
 /*
@@ -26,6 +29,8 @@ extras.play_list([],piezo,function(err,tunes){
 	if(err) console.log(err,"error ");
 	console.log(tunes);
 });
-	Play all  songs
 */
+//	Play all  songs
+
+
 });//termina board 

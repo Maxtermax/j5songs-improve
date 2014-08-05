@@ -46,34 +46,47 @@ module.exports={
 
 		var e=0;//indice
 		var NotFound=[];
-		var tempo;
 		var playing_name;
 		var delay=5000;//delay between songs
-		var available=0;
+		var available=1;
+
+/*
+setInterval(function(){
+	console.log("Time test");
+},delay);
+*/
+
+
+
+
 
 		for( i in data.DB ){
 			//this variable i, is equals to the key of data.DB
 			//http://www.w3schools.com/js/tryit.asp?filename=tryjs_object_for_in
 			if( data.DB[ data.Lyrics[e] ] ){
-				tempo=data.DB[data.Lyrics[e]]["tempo"];
 				playing_name=data.Lyrics[e];
 				
 				//Closure width setTimeout inside bucle like loop to play 
 				// http://brackets.clementng.me/post/24150213014/example-of-a-javascript-closure-settimeout-inside-a
-				 
-			var loop=setTimeout(function(tempo,playing_name,e){ 
-						return function(){
-						 var song = songs.load(playing_name);
-							data.callback(null,{
-								name:playing_name,	
-								Data:data.DB[ data.Lyrics[e] ]
-							});//if rigth return json with info of song playing now
+				var loop=setTimeout(function(playing_name){ 
+					return function(){
+						data.pi.play(songs.load(playing_name));//play it !!!
 
-							data.pi.play(song);//play it !!!
-						//	console.log(available*delay, playing_name );
-				
-						};
-				}(tempo,playing_name,e),available*delay);
+					 	data.callback(null,{
+							name:playing_name,	
+							Data:data.DB[ data.Lyrics[e] ]	
+						});//if rigth return json with info of song playing now
+
+
+					//	console.log(available*delay, playing_name );
+
+					};
+				}(playing_name),available*delay);
+
+
+
+
+
 
 				available++//sum good itereaciones 
 			}else if(data.Lyrics[e]){
