@@ -1,5 +1,4 @@
-=======
-APORTES A J5-SONGS
+Aporte a j5-songs
 ==============
 ![alt tag](http://3.bp.blogspot.com/-O1w0jS1rQcI/UDYKjp_ErpI/AAAAAAAAAn0/487yKpxMI80/s640/mario.PNG)
 
@@ -67,8 +66,5 @@ extras.play_list([],piezo,function(err,tunes){
 
 En de opcion libre la decision de  incluir o modificar esta funcion para añadir al modulo 'j5-songs'
 
-#CONTACTO
-##	1- esneyder_a@hotmail.com 
-##  2- esneyderamin@gmail.com 
-##  3- https://twitter.com/Sneyder_A 
-##From @Quibdojs  		 								 https://twitter.com/QuibdoJs
+# Contacto
+  https://twitter.com/Sneyder_A 
